@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Listora | Etsy Listing SEO Auditor</title>
+    <meta
+      name="description"
+      content="Listora is an Etsy listing SEO audit tool. Paste your listing URL and receive a scored report with specific, listing-level recommendations on your title, tags, and description in under 60 seconds."
+    >
+    <meta property="og:title" content="Listora | Etsy Listing SEO Auditor">
+    <meta
+      property="og:description"
+      content="Stop guessing why your Etsy listing isn't ranking. Listora gives you a scored SEO audit with before/after title rewrites, tag gap analysis, and a 3-step action plan specific to your listing."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/listora-hero.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Listora home">
+        <span class="brand-mark">L</span>
+        <span>Listora</span>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="#why-listora">Why Listora</a>
+        <a href="#access">Request audit</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/listora-hero.png" alt="Laptop showing a Listora SEO audit report with score breakdown and recommendations">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Etsy listing SEO audit tool, pre-launch beta</p>
+          <h2 id="hero-title">eRank shows you numbers.<br>Listora tells you what to fix.</h2>
+          <p class="hero-copy">
+            Paste your Etsy listing URL and get a scored SEO audit in under 60 seconds.
+            You will see exactly which words to swap in your title, which tag slots are wasting space,
+            and what your description is missing, with before/after examples written for your specific listing.
+          </p>
+          <form class="audit-form" id="audit-form">
+            <label for="listing-url">Your Etsy listing URL</label>
+            <div class="form-row">
+              <input
+                id="listing-url"
+                name="listing-url"
+                type="url"
+                inputmode="url"
+                placeholder="https://www.etsy.com/listing/123456789/..."
+                autocomplete="url"
+                required
+              >
+              <button type="submit">Get free audit</button>
+            </div>
+            <p class="form-note" id="form-note" role="status">
+              Free audits available now. No account required for your first 3 audits.
+              Automated API integration is currently under Etsy review.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- PROBLEM STATEMENT -->
+      <section class="section" id="problem" aria-labelledby="problem-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">The problem every Etsy seller knows</p>
+            <h2 id="problem-title">You optimized your listing. It still isn't ranking. You don't know why.</h2>
+          </div>
+          <div class="problem-grid">
+            <div class="problem-card">
+              <h3>eRank gives you a grade, not a fix.</h3>
+              <p>
+                You see your listing scored C+ and your primary keyword has a competition score of 72.
+                What do you actually change? eRank doesn't tell you. You're left interpreting data
+                with no clear next step.
+              </p>
+            </div>
+            <div class="problem-card">
+              <h3>Generic SEO advice doesn't translate to Etsy.</h3>
+              <p>
+                Blog posts say "use long-tail keywords" and "put your keyword in the first three words."
+                But which keywords? Which three words? None of this advice is written for
+                <em>your</em> listing, your category, your buyer.
+              </p>
+            </div>
+            <div class="problem-card">
+              <h3>Etsy's algorithm changed again.</h3>
+              <p>
+                What worked six months ago may be hurting you today. Sellers report sudden ranking
+                drops after algorithm updates with no clear explanation of what shifted or
+                what to adjust.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY LISTORA -->
+      <section class="section muted" id="why-listora" aria-labelledby="why-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Why Listora</p>
+            <h2 id="why-title">Other tools show you data. Listora gives you a to-do list.</h2>
+          </div>
+          <div class="comparison-grid">
+            <div class="comparison-card">
+              <h3>eRank</h3>
+              <p>
+                Shows keyword search volume, competition grades, and listing scores. You still have
+                to interpret what any of it means for your specific title and decide what to change.
+                Users describe it as powerful but overwhelming.
+              </p>
+            </div>
+            <div class="comparison-card">
+              <h3>Marmalead</h3>
+              <p>
+                Trend forecasting and keyword engagement scores. Strong for research, but still a
+                data dashboard. Starts at $19/mo with no free tier. Does not write recommendations
+                for your actual listing content.
+              </p>
+            </div>
+            <div class="comparison-card highlight">
+              <h3>Listora</h3>
+              <p>
+                Reads your live listing, scores it, and tells you the three specific things to change
+                first, with the rewritten version written for your listing. No data to interpret.
+                No research required. Free to start, results in under 60 seconds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATUS / API NOTE -->
+      <section class="section" id="access" aria-labelledby="access-title">
+        <div class="section-inner split">
+          <div>
+            <p class="eyebrow">Current status</p>
+            <h2 id="access-title">Pre-launch beta. Audits available now.</h2>
+            <p>
+              Listora is currently in pre-launch validation. Free manual audits are available while
+              the Etsy Open API v3 integration is under developer review. Once the API integration
+              is approved, audits will run automatically in under 60 seconds.
+            </p>
+            <p>
+              The Etsy API integration reads only public listing data, the same information visible
+              to any buyer on Etsy.com, to generate seller-facing SEO recommendations. No private
+              shop data, payment data, or buyer information is ever requested or stored.
+            </p>
+          </div>
+          <div class="status-panel" aria-label="Application and data details">
+            <dl>
+              <div>
+                <dt>Application URL</dt>
+                <dd>https://listora.github.io/</dd>
+              </div>
+              <div>
+                <dt>Use case</dt>
+                <dd>Etsy listing SEO audit tool for sellers. Reads public listing data to generate specific title, tag, and description improvement recommendations.</dd>
+              </div>
+              <div>
+                <dt>Etsy API data accessed</dt>
+                <dd>Public listing fields only: title, tags (up to 13), description, taxonomy/category, price, image count</dd>
+              </div>
+              <div>
+                <dt>Data not accessed</dt>
+                <dd>No payment data · No private shop analytics · No buyer information · No order data</dd>
+              </div>
+              <div>
+                <dt>Data handling</dt>
+                <dd>Listing data is processed to generate the audit report and is not sold, redistributed, or used for any purpose other than generating recommendations for the seller who requested the audit.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- TARGET SELLERS -->
+      <section class="section muted" id="who" aria-labelledby="who-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Who Listora is built for</p>
+            <h2 id="who-title">Etsy sellers who want to act, not analyze.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Sellers frustrated with low visibility</h3>
+              <p>
+                You have 1 to 100 active listings and can't figure out why some rank and some don't.
+                You've tried adding keywords but nothing seems to move. Listora tells you exactly
+                where each listing is losing ranking power and what to change.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Sellers who tried eRank but got lost</h3>
+              <p>
+                eRank is powerful if you know how to use it. Many sellers find it overwhelming
+                and spend more time in dashboards than actually improving their listings. Listora
+                is the opposite: one URL in, three changes out.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>New sellers under 6 months</h3>
+              <p>
+                You're still learning what Etsy's algorithm rewards. Listora gives you immediate,
+                actionable feedback on your newest listings so you can build good SEO habits
+                from day one, without needing to learn all the theory first.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Listora is an independent tool and is not affiliated with, endorsed by, or certified by Etsy, Inc.</p>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
